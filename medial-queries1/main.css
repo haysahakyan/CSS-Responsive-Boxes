@@ -1,3 +1,46 @@
 body {
   background: blanchedalmond;
 }
+* {
+  border: 1px solid teal;
+}                  
+.container {
+  display: flex;
+  min-height: 10vh;
+  flex-direction: column;
+  justify-content: space-between;
+
+} 
+.a, .b, .c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.a{
+  padding: 20px;
+  border: 1px soild yellow;
+}
+.b{
+  padding: 20px;
+  border: 1px soild red;
+  height: 300px;
+}
+.c{
+  padding: 20px;
+  border: 1px soild blueviolet;
+}
+@media (max-width: 600px) {
+  .b {
+    display: flex;
+  flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
+  }
+  .c{
+    display: flex;
+  flex-wrap: wrap;
+    flex-direction: row;
+    width: 30%;
+  }
+  }
+}                  
